@@ -1,5 +1,6 @@
 package com.example.demorestfulapi.demostream.functionalinterface;
 
+import java.awt.print.Printable;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
@@ -10,7 +11,6 @@ public class DemoConsumer {
         greetConsumer.accept(customer);
         greetBiConsumer.accept(customer,false);
     }
-
     static Consumer<Customer> greetConsumer = customer
             -> System.out.println("Hello " + customer.name + " " + customer.phone);
 
